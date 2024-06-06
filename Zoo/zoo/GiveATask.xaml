@@ -1,0 +1,32 @@
+﻿<Window x:Class="zootopia.GiveATask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zootopia"
+        mc:Ignorable="d"
+        Title="GiveATask" Height="630" Width="537">
+    <Grid RenderTransformOrigin="0.434,0.604">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFFF8121" HorizontalAlignment="Center" Height="76" VerticalAlignment="Top" Width="537"/>
+        <Label Content="Send command" HorizontalAlignment="Center" Height="62" Margin="0,7,0,0" VerticalAlignment="Top" Width="272" FontSize="36" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Choose a worker" HorizontalAlignment="Left" Height="40" Margin="132,89,0,0" VerticalAlignment="Top" Width="214" Background="{x:Null}" Foreground="#FF914A15" FontSize="22"/>
+        <ComboBox x:Name="workername" HorizontalAlignment="Center" Height="38" Margin="0,129,0,0" VerticalAlignment="Top" Width="272" SelectionChanged="workername_SelectionChanged">
+        </ComboBox>
+        <Button Content="Back" HorizontalAlignment="Left" Height="60" Margin="102,544,0,0" VerticalAlignment="Top" Width="100" Background="#FFFF8121" Foreground="White" BorderBrush="#FFFF8121" BorderThickness="3" FontSize="24" Click="Button_Click" RenderTransformOrigin="0.797,0.512"/>
+        <Button Content="Send" HorizontalAlignment="Left" Height="60" Margin="243,544,0,0" VerticalAlignment="Top" Width="210" Background="White" Foreground="#FFFF8121" BorderBrush="#FFFF8121" BorderThickness="3" FontSize="20" Click="Button_Click_1" RenderTransformOrigin="0.444,0.104"/>
+        <TextBlock  Name="type" HorizontalAlignment="Center" Height="31" Margin="0,172,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" IsEnabled="False" FontSize="14" Foreground="#FFFF8121"/>
+        <Label Content="Choose a command" HorizontalAlignment="Left" Height="40" Margin="132,212,0,0" VerticalAlignment="Top" Width="214" Background="{x:Null}" Foreground="#FF914A15" FontSize="22"/>
+        <ComboBox x:Name="commands" HorizontalAlignment="Center" Height="38" Margin="0,257,0,0" VerticalAlignment="Top" Width="272" SelectionChanged="commands_SelectionChanged">
+        </ComboBox>
+        <Label Content="Choose an animal" HorizontalAlignment="Left" Height="40" Margin="132,345,0,0" VerticalAlignment="Top" Width="214" Background="{x:Null}" Foreground="#FF914A15" FontSize="22"/>
+        <ComboBox x:Name="animalls" HorizontalAlignment="Center" Height="38" Margin="0,390,0,0" VerticalAlignment="Top" Width="272" SelectionChanged="animalls_SelectionChanged"/>
+        <Label Content="Cleanliness:" HorizontalAlignment="Left" Height="25" Margin="141,433,0,0" VerticalAlignment="Top" Width="84" Foreground="#FFFF8121"/>
+        <Label Content="Health:" HorizontalAlignment="Left" Height="25" Margin="141,463,0,0" VerticalAlignment="Top" Width="84" Foreground="#FFFF8121"/>
+        <Label Name="clean" Content="" HorizontalAlignment="Center" Height="25" Margin="0,433,0,0" VerticalAlignment="Top" Width="98"/>
+        <Label x:Name="health" Content="" HorizontalAlignment="Left" Height="25" Margin="199,463,0,0" VerticalAlignment="Top" Width="114"/>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="zootopia.ChooseAnAction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zootopia"
+        mc:Ignorable="d"
+        Title="ChooseAnAction" Height="373" Width="555">
+    <Grid>
+        <Rectangle Fill="#FFFF8121" HorizontalAlignment="Center" Height="76" VerticalAlignment="Top" Width="555"/>
+        <Label Content="What do you want to do?" HorizontalAlignment="Center" Height="62" Margin="0,10,0,0" VerticalAlignment="Top" Width="440" FontSize="36" FontWeight="Bold" Foreground="White"/>
+        <Button Content="Edit/add/delete animals" HorizontalAlignment="Center" Height="60" Margin="0,136,0,0" VerticalAlignment="Top" Width="335" Background="White" Foreground="#FFFF8121" BorderBrush="#FFFF8121" BorderThickness="3" FontSize="24" Click="Button_Click"/>
+        <Button Content="Edit and view staff" HorizontalAlignment="Center" Height="60" Margin="0,214,0,0" VerticalAlignment="Top" Width="335" Background="White" Foreground="#FFFF8121" BorderBrush="#FFFF8121" BorderThickness="3" FontSize="24" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

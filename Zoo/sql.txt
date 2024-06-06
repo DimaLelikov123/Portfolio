@@ -1,0 +1,74 @@
+CREATE TABLE enclosures (
+    id_enclosure INT IDENTITY(1,1) PRIMARY KEY,
+    type_of_enclosure NVARCHAR(255),
+    image_link NVARCHAR(255),
+    description NVARCHAR(255)
+);
+GO
+
+-- Створюємо таблицю workers
+CREATE TABLE workers (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    full_name NVARCHAR(255),
+    doing_something BIT,
+    what_doing NVARCHAR(255),
+    type_of_worker NVARCHAR(50),
+    with_which_animal NVARCHAR(255)
+);
+GO
+
+-- Створюємо таблицю animals
+CREATE TABLE animals (
+    id_animal INT IDENTITY(1,1) PRIMARY KEY,
+    kind_of_animal NVARCHAR(50),
+    what_eat NVARCHAR(255),
+    species NVARCHAR(255),
+    name_animal NVARCHAR(255),
+    age FLOAT,
+    weight FLOAT,
+    description NVARCHAR(255),
+    type_of_enclosure NVARCHAR(255),
+    number_of_enclosure INT,
+    cleanliness BIT,
+    health_status NVARCHAR(255),
+    FOREIGN KEY (number_of_enclosure) REFERENCES enclosures(id_enclosure)
+);
+GO
+
+-- Створюємо таблицю animals_enclosures
+CREATE TABLE animals_enclosures (
+    id_animal INT,
+    id_enclosure INT,
+    PRIMARY KEY (id_animal, id_enclosure),
+    FOREIGN KEY (id_animal) REFERENCES animals(id_animal),
+    FOREIGN KEY (id_enclosure) REFERENCES enclosures(id_enclosure)
+);
+GO
+
+
+-- Вставляємо дані у таблицю enclosures
+INSERT INTO enclosures (type_of_enclosure, image_link, description)
+VALUES
+('Big enclosure', 'https://encrypted-tbn3.gstatic.com/images?tbn:ANd9GcSOPdJ975OPigQ9119Zuatis8XPgYW9jneOPxzccA6aJxl2hWVI', 'Large open area for animals like lions.'),
+('Aviary', 'https://pensthorpe.com/wp-content/uploads/2022/06/2020_10_26_Wader-Aviary-3-Steve-Adams-1536x1022.jpg', 'Enclosed space with trees and perches for birds like parrots.'),
+('Terrarium', 'https://i.pinimg.com/564x/62/cf/59/62cf59fa7062e73ed99a9ab424336d0b.jpg', 'Enclosed space with controlled humidity and temperature for reptiles and amphibians.'),
+('Aquarium', 'https://bilder.deutschlandfunk.de/FI/LE/_c/af/FILE_caf2862faa880e9b3e6a6234e7f36400/delbert-pagayona-46v8clmnjy8-unsplash-jpg-100-1920x1080.jpg', 'Glass enclosure filled with water for fish and other aquatic animals.');
+
+-- Вставляємо дані у таблицю workers
+INSERT INTO workers (full_name, doing_something, what_doing, type_of_worker, with_which_animal)
+VALUES
+('Jane Smith', 1, 'Feeding animals', 'Medical', 'Lion'),
+('Emily Johnson', 0, NULL, 'Feeder', NULL),
+('Michael Brown', 1, 'Cleaning enclosures', 'Cleaner', NULL),
+('Sarah Davis', 0, NULL, 'Medical', 'Elephant');
+
+-- Вставляємо дані у таблицю animals
+INSERT INTO animals (kind_of_animal, what_eat, species, name_animal, age, weight, description, type_of_enclosure, number_of_enclosure, cleanliness, health_status)
+VALUES
+('Mammal', 'Herbivore', 'Lion', 'Simba', 5, 200, 'African lion', 'Savannah', 1, 1, 'Good');
+
+-- Вставляємо дані у таблицю animals_enclosures
+-- Передбачається, що це зв'язок між твариною 'Simba' і вольєром 'Savannah'
+INSERT INTO animals_enclosures (id_animal, id_enclosure)
+VALUES
+(1, 1);

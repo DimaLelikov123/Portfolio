@@ -1,0 +1,28 @@
+﻿<Window x:Class="zootopia.ChangeStatus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zootopia"
+        mc:Ignorable="d"
+        Title="ChangeStatus" Height="416" Width="483">
+    <Grid>
+        <Rectangle Fill="#FFFF8121" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="794"/>
+        <Label Content="Change status" HorizontalAlignment="Center" Height="62" Margin="0,7,0,0" VerticalAlignment="Top" Width="247" FontSize="36" FontWeight="Bold" Foreground="White"/>
+        <Label Content="Health status" HorizontalAlignment="Center" Height="40" Margin="0,79,0,0" VerticalAlignment="Top" Width="215" Background="{x:Null}" Foreground="#FF914A15" FontSize="22" HorizontalContentAlignment="Center" RenderTransformOrigin="0.4,0.536"/>
+        <ComboBox x:Name="health" HorizontalAlignment="Center" Height="38" Margin="0,119,0,0" VerticalAlignment="Top" Width="271">
+            <ComboBoxItem Name="Normal" Content="Normal"/>
+            <ComboBoxItem Name="Examine" Content="Needs to be examined"/>
+            <ComboBoxItem Name ="Sick" Content="Sick"/>
+        </ComboBox>
+        <Label Content="Cleanliness of the enclosure" HorizontalAlignment="Center" Height="40" Margin="0,190,0,0" VerticalAlignment="Top" Width="310" Background="{x:Null}" Foreground="#FF914A15" FontSize="22" HorizontalContentAlignment="Center"/>
+        <ComboBox x:Name="clean" HorizontalAlignment="Center" Height="38" Margin="0,229,0,0" VerticalAlignment="Top" Width="271">
+            <ComboBoxItem Content="Dirty"/>
+            <ComboBoxItem Content="Clean"/>
+        </ComboBox>
+        <CheckBox Name="notify" Content="notify all free medical staff" HorizontalAlignment="Left" Height="30" Margin="159,168,0,0" VerticalAlignment="Top" Width="206" FontSize="14"/>
+        <Button Content="Save changes" HorizontalAlignment="Left" Height="60" Margin="232,319,0,0" VerticalAlignment="Top" Width="210" Background="White" Foreground="#FFFF8121" BorderBrush="#FFFF8121" BorderThickness="3" FontSize="20" Click="Button_Click_1"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="60" Margin="44,319,0,0" VerticalAlignment="Top" Width="100" Background="#FFFF8121" Foreground="White" BorderBrush="#FFFF8121" BorderThickness="3" FontSize="24" Click="Button_Click"/>
+
+    </Grid>
+</Window>

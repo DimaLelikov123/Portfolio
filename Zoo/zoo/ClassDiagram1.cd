@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="zootopia.Animal" Collapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAACAAAAQAABIiAAAAAAAAQEgAAgAAACAAEgBAg=</HashCode>
+      <FileName>patterns\Factory_method.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.Mammal" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Factory_method.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.Bird" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Factory_method.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.Amphibian" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Factory_method.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.Fish" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Factory_method.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.AnimalFactory" Collapsed="true">
+    <Position X="11.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAABAAA=</HashCode>
+      <FileName>patterns\Factory_method.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.ICommand" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.feedAnimal">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.cleanTheEnclosure" Collapsed="true">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.treatAnimal" Collapsed="true">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.Worker" Collapsed="true">
+    <Position X="12" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAIACQAAAAAAIAAAAgAFAAAAACAgAAAAAgA=</HashCode>
+      <FileName>patterns\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.Delegate" Collapsed="true">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAQAA=</HashCode>
+      <FileName>patterns\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="zootopia.MedicalStaff" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAACQAAAAAAAAAAAAAEAAAAAAAgAAAAAgA=</HashCode>
+      <FileName>patterns\Observer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="zootopia.IObserver" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>patterns\Observer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
